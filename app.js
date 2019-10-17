@@ -23,6 +23,13 @@ app.post('/addtask', function(req, res){
 });
 
 app.post('/removetask', function(req, res){
+    var completeTask = req.body.check;
+    if(typeof completeTask === "string"){
+        complete.push(completeTask);    
+        task.splice(task.indexOf(completeTask), 1);
+    }else if(typeof completeTask === "object"){
+
+    }
     res.redirect("/");
 });
 
