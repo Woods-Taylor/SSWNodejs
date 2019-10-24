@@ -31,7 +31,7 @@ app.get('/', function(req, res){
             complete = [];
             for(i = 0; i < todo.length; i++){
                 if(todo[i].done){
-                task.push(todo[i].item);
+                // task.push(todo[i].item);
                     complete.push(todo[i].item);
 
 
