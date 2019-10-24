@@ -60,7 +60,8 @@ app.post('/removetask', function(req, res){
     }else if(typeof completeTask === "object"){
         for(var i = 0; i < completeTask.length; i++){
             Todo.updateOne({item: completeTask[i]},{done: true}, function(err){
-            console.log(err);
+             console.log(err);
+            })
             //complete.push(completeTask[i]);
             //task.splice(task.indexOf(completeTask[i]), 1);
         }
