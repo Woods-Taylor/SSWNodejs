@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ encoded: false}));
 app.use(express.static("public"));
 const Todo = require('./models/todo.model');
-const mongoDB = 'mongodb+srv://woods_taylor:<password>@serversidenodecomic-huvrm.mongodb.net/test?retryWrites=true&w=majority';
+const mongoDB = 'mongodb+srv://woods_taylor:password1555@serversidenodecomic-huvrm.mongodb.net/test?retryWrites=true&w=majority';
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 let db = mongoose.connection;
