@@ -1,35 +1,31 @@
 {
-  "name": "sample",
+  "name": "nodejsexample",
   "version": "1.0.0",
-  "description": "a test init",
-  "main": "index.js",
+  "description": "this is example",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseJCanedo/nodejsExample.git"
+  },
+  "author": "jose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseJCanedo/nodejsExample/issues"
+  },
+  "homepage": "https://github.com/JoseJCanedo/nodejsExample#readme",
+  "engines": {
+    "node": "10.x"
+  },
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.17.2",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "mongodb": "^3.3.3",
     "mongoose": "^5.7.6",
-    "nodejs": "^0.0.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "node app.js",
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Woods-Taylor/SSWNodejs.git"
-  },
-  "keywords": [
-    "cool"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ericsson-james/nodejs/issues"
-  },
-  "homepage": "https://github.com/ericsson-james/nodejs#readme",
-  "engines": {
-    "node": "10.x"
+    "node-fetch": "^2.6.0"
   }
 }
